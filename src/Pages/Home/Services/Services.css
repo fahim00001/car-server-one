@@ -1,0 +1,27 @@
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+@media only screen and (max-width:390px) {
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+        width: 300px;
+        margin: 0 auto ;
+    }
+    .services-container img{
+        width: 250px;
+    }
+    .services-container p{
+        width: 100%;
+    }
+   
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+        .services-container{
+            grid-template-columns: repeat(2,1fr);
+        }    
+}
